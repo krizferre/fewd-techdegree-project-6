@@ -13,10 +13,14 @@ p {
   margin: 30px;
 }
 
-span:hover {
+p > span:hover {
   opacity: .5;
   cursor: pointer;
 }
+
+/* ================================= 
+  Media Queries
+==================================== */
 
 @media (min-width: 768px) {
   
@@ -29,4 +33,25 @@ span:hover {
   }
 }
 
+/* ================================= 
+  MediaElement Custom Styles
+==================================== */
 
+.mejs__controls:not([style*="display: none"]) {
+  background: #f5656559;
+  padding: 0;
+}
+
+.mejs__time-current {
+  background: #fc3636;
+}
+
+.mejs__time-float {
+  background: none; 
+  border: none; 
+  color: rgb(255, 255, 255);
+}
+
+.mejs__time-float-corner {
+  border-color: #00ff4c transparent transparent transparent;
+}
